@@ -1,0 +1,47 @@
+[
+    {
+        "scheme_id": "SISFS-001",
+        "source": "Startup India Seed Fund Scheme",
+        "grant_name": "Direct Seed Fund",
+        "funding_amount": "Up to \u20b950 Lakhs",
+        "target_sector": "Agnostic",
+        "eligibility_keywords": [
+            "DPIIT Recognized",
+            "Pvt Ltd",
+            "Registered less than 2 years ago"
+        ],
+        "compliance_traps": [
+            "Cannot be a sole proprietorship",
+            "Requires Udyam Registration"
+        ]
+    },
+    {
+        "scheme_id": "BIRAC-BIG-001",
+        "source": "BIRAC",
+        "grant_name": "Biotech Ignition Grant (BIG)",
+        "funding_amount": "Up to \u20b950 Lakhs",
+        "target_sector": "Biotech, MedTech, AgriTech",
+        "eligibility_keywords": [
+            "Incubator resident",
+            "Scientific Validation",
+            "Unregistered Startups Allowed"
+        ],
+        "compliance_traps": [
+            "Requires an official incubator endorsement letter"
+        ]
+    },
+    {
+        "scheme_id": "AIM-AIC-001",
+        "source": "Atal Innovation Mission",
+        "grant_name": "AIC Grant",
+        "funding_amount": "Up to \u20b910 Crore",
+        "target_sector": "Deep Tech, Innovation",
+        "eligibility_keywords": [
+            "Academic Affiliation",
+            "Incubator Backed"
+        ],
+        "compliance_traps": [
+            "Physical lab space required"
+        ]
+    }
+]
