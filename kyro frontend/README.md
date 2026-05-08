@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# KYRO ✦
+**The Sovereign Access Layer for India's Founders, MSMEs, and NGOs**
 
-# Run and deploy your AI Studio app
+![KYRO Concept](https://img.shields.io/badge/Status-Hackathon_Prototype-brightgreen) ![Team](https://img.shields.io/badge/Team-TryHard-blueviolet)
 
-This contains everything you need to run your app locally.
+Every year, billions of rupees in government funds allocated for MSMEs, Startups, and NGOs go unutilized. While the capital exists, there is a systemic **'Last-Mile Friction'** preventing access. 
 
-View your app in AI Studio: https://ai.studio/apps/396d34b7-3193-45b8-a818-ab8a4b267c6c
+KYRO is not just a search engine for grants; it is an end-to-end **Actionable Infrastructure**. We bridge the ₹1 Trillion funding gap by translating startup jargon into bureaucratic "Gov-Speak", auto-generating offline compliance checklists, and filling formal representations.
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🛑 The Problem
+1. **The Language Barrier:** 90% of founders fail because they pitch "tech innovations" instead of using specific government evaluators' keywords (e.g., "Indigenous Development", "Import Substitution").
+2. **The Compliance Trap:** Minor document mismatches (e.g., PAN vs. Udyam mismatch) cause automated rejections.
+3. **The Offline Void:** 70% of government schemes require physical submission. A digital "Submit" button is useless without a tactical roadmap to the local District Industries Centre (DIC).
 
+## ⚡ The Solution: Core Modules
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+KYRO routes users through a strict **Identity Triage** (NGO, Startup, or MSME) to set the bureaucratic context, then unlocks four heavy-lifting engines:
+
+### 1. 🎯 OPPORTUNITIES (The Strategy Engine)
+A hyper-minimalist, context-aware chat interface. Tell KYRO your current resources (e.g., "I have an IoT hardware prototype and 3 engineers") and it will identify your strategic funding path (e.g., *Startup India Seed Fund* or *MSME Idea Hackathon*).
+
+### 2. 🗺️ CHECKLIST (The Bureaucracy GPS)
+Directly linked to the Opportunities chat, this auto-generates your offline marching orders.
+* **Legal:** Auto-drafts the exact text needed for a ₹100 Notary Affidavit.
+* **Materials:** Reminds you which specific annexures must be printed on **Green Ledger paper**.
+* **Logistics:** Maps your route to the nearest physical submission office (e.g., DIC office, Bannerghatta) with specific submission hours.
+
+### 3. 🔍 PARSE (The Rejection Killer)
+A split-screen document analyzer. Upload a rejected application or draft. KYRO highlights "Red Zone" compliance errors and suggests precise "Gov-Speak" translations (e.g., changing "SaaS platform" to "Digital Public Infrastructure").
+
+### 4. ✍️ FILLING (The Automation Beast & Liaison)
+KYRO doesn't just fill grant forms—it drafts power. Using the data from your profile, the LLM auto-generates highly formal **Representation Letters** addressed to the relevant Ministry Secretary or DIC General Manager, ensuring your project arrives with professional bureaucratic gravitas.
+
+---
+
+## 🛠️ Technical Architecture & UI Flow
+* **Frontend:** Built with React/Next.js and Tailwind CSS.
+* **Aesthetic:** Ultra-minimalist, premium dark mode featuring glassmorphism (`backdrop-blur-md`), deep radial gradients, and a zero-friction UI.
+* **State Linking:** Global state management seamlessly links the Chat interface to the auto-generating Checklist and form-filler modules.
+* **AI Engine:** Powered by Contextual RAG and strict Prompt Engineering to enforce the Indian Bureaucratic "Gov-Speak" persona.
+
+---
+
+## 🚀 Demo Scenario
+**Target:** MSME Idea Hackathon
+**Profile:** Tech Startup (Hardware/IoT)
+1. User selects **Startup / DPIIT** on the landing page.
+2. In **Opportunities**, user explains their project (e.g., *RouteSentry* - real-time road anomaly detection).
+3. KYRO identifies the scheme match and instantly populates the **Checklist** with instructions for board resolutions and physical submissions.
+4. User uploads a draft to **Parse**, where KYRO corrects "sensor data" to "Dynamic Structural Health Monitoring".
+5. In **Filling**, KYRO drafts a flawless formal letter to the MSME Development Institute.
+
+---
+*Built with precision to make sovereign funding accessible to the innovators who need it most.*
