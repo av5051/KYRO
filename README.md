@@ -34,13 +34,19 @@ A split-screen document analyzer. Upload a rejected application or draft. KYRO h
 KYRO doesn't just fill grant forms—it drafts power. Using the data from your profile, the LLM auto-generates highly formal **Representation Letters** addressed to the relevant Ministry Secretary or DIC General Manager, ensuring your project arrives with professional bureaucratic gravitas.
 
 ---
-
 ## 🛠️ Technical Architecture & UI Flow
-* **Frontend:** Built with React/Next.js and Tailwind CSS.
-* **Aesthetic:** Ultra-minimalist, premium dark mode featuring glassmorphism (`backdrop-blur-md`), deep radial gradients, and a zero-friction UI.
-* **State Linking:** Global state management seamlessly links the Chat interface to the auto-generating Checklist and form-filler modules.
-* **AI Engine:** Powered by Contextual RAG and strict Prompt Engineering to enforce the Indian Bureaucratic "Gov-Speak" persona.
 
+Frontend: Built with React/Next.js and Tailwind CSS for a high-performance, responsive interface.
+
+Aesthetic: Ultra-minimalist, premium dark mode featuring glassmorphism (backdrop-blur-md), deep radial gradients, and a zero-friction UI.
+
+Backend Orchestrator: Python (Flask/FastAPI) serving as the central nervous system. It manages user sessions, coordinates the RAG pipeline, and handles the logic for the auto-updating checklist.
+
+Vector Database: PostgreSQL with the pgvector extension (hosted via Supabase). This stores high-dimensional embeddings of thousands of government policy documents, enabling sub-second semantic retrieval.
+
+AI Engine: Powered by Groq LPU™ Inference running openai/gpt-120b. It uses a custom RAG (Retrieval-Augmented Generation) pipeline with local all-MiniLM-L6-v2 embeddings to enforce a strict Indian Bureaucratic "Gov-Speak" persona.
+
+State Linking: Global state management seamlessly links the Chat interface to the auto-generating Checklist and form-filler modules, ensuring data persists as the user moves from "Discovery" to "Action."
 ---
 
 ## 🚀 Demo Scenario
